@@ -2,3 +2,4 @@
 .idea
 *.log
 models/*
+venv
