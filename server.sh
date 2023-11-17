@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+LLAMA_CPP_FOLDER=~/src/llama.cpp
+
 # Function to display usage information
 usage() {
     echo "Usage: $0 [7b|13b|X]"
@@ -16,11 +18,11 @@ fi
 case $1 in
     7b)
         echo "Running server with File A..."
-        MODEL="models/llama-2-7b-chat.Q4_0.gguf"
+        MODEL="models/llama-2-7b-chat.Q4_K_M.gguf"
         ;;
     13b)
         echo "Running server with File B..."
-        MODEL="models/llama-2-13b-chat.Q4_0.gguf"
+        MODEL="models/llama-2-13b-chat.Q4_K_M.gguf"
         ;;
     *)
         echo "Invalid argument: $1"
@@ -28,8 +30,6 @@ case $1 in
         exit 1
         ;;
 esac
-
-LLAMA_CPP_FOLDER=~/src/llama.cpp
 
 open http://localhost:8080
 
