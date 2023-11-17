@@ -27,3 +27,15 @@ Before usage, update the script with the location of your llama.cpp installation
 Usage:
 - Execute the script with one argument: the name of the model.
 - For example: `./server.sh 7b` will run Llama 2 7B chat model
+
+## Running BakLLaVa-1 with webcam live stream
+
+1. First, download the model `./download.sh bakllava`
+2. Second, configure local Python environment with virtualenv
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    pip3 install -r requirements.txt
+    ```
+3. Start the llama.cpp server with bakllava `./server.sh bakllava`
+4. Start streaming from webcam `./bakllava-webcam.py`
