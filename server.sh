@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-LLAMA_CPP_FOLDER=~/src/llama.cpp
-
 # Function to display usage information
 usage() {
     echo "Usage: $0 [7b|13b|X]"
@@ -38,10 +36,7 @@ esac
 
 open http://localhost:8080
 
-"$LLAMA_CPP_FOLDER"/server \
+./llama.cpp/server \
   $MODEL_ARGS \
   --ctx-size 2048 \
   --threads 8
-
-
-

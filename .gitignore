@@ -4,4 +4,4 @@
 models/*
 data/*
 venv
-
+llama.cpp
