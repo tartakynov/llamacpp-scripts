@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 LLAMA_CPP_FOLDER=~/src/llama.cpp
-MODEL=$LLAMA_CPP_FOLDER/models/13B/llama-2-13b-chat.Q4_0.gguf
+MODEL=models/llama-2-7b-chat.Q4_0.gguf
 
 open http://localhost:8080
 
