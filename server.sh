@@ -5,6 +5,7 @@ usage() {
     echo "Usage: $0 [7b|13b|X]"
     echo "  7b: Run server with Llama 2 7B model"
     echo "  13b: Run server with Llama 2 13B model"
+    echo "  zephyr7b: Run server with Zephyr 7B Beta model"
     echo "  bakllava: Run server with BakLLaVa-1 model"
 }
 
@@ -22,6 +23,10 @@ case $1 in
     13b)
         echo "Running server with LLama 2 13B..."
         MODEL_ARGS="-m models/llama-2/llama-2-13b-chat.Q4_K_M.gguf"
+        ;;
+    zephyr7b)
+        echo "Running server with Zephyr 7B Beta..."
+        MODEL_ARGS="-m models/zephyr/zephyr-7b-beta.Q4_K_M.gguf"
         ;;
     bakllava)
         echo "Running server with BakLLaVa-1..."

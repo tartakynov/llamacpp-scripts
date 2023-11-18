@@ -13,6 +13,14 @@ git submodule update
 
 Then build it by following its provided instructions.
 
+## Models
+
+The `download.sh` and `server.sh` support the following models at the moment
+- **`7b`**: Llama2 7B
+- **`13b`**: Llama2 13B
+- **`zephyr7b`**: Zephyr 7B Beta
+- **`bakllava`**: BakLLaVa-1
+
 ## Download models
 
 **`download.sh`**
