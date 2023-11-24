@@ -15,12 +15,9 @@ Then build it by following its provided instructions.
 
 ## Models
 
-The `download.sh` and `server.sh` support the following models at the moment
-- **`7b`**: Llama2 7B
-- **`13b`**: Llama2 13B
-- **`zephyr7b`**: Zephyr 7B Beta
-- **`neural7b`**: Intel Neural Chat 7B v3 1
-- **`bakllava`**: BakLLaVa-1
+**`models.sh`**
+
+This script defines supported models. Add more models into the script.
 
 ## Download models
 
