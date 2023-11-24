@@ -40,6 +40,13 @@ model_download_commands+=("
 ")
 model_run_args+=("-m models/bakllava/ggml-model-q4_k.gguf --mmproj models/bakllava/mmproj-model-f16.gguf")
 
+model_aliases+=("mistral7b")
+model_names+=("Mistral 7B v0.1 Q6_K")
+model_download_commands+=("
+  mkdir -p models/mistral && cd models/mistral && curl -LO https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/resolve/main/mistral-7b-v0.1.Q6_K.gguf?download=true
+")
+model_run_args+=("-m models/mistral/mistral-7b-v0.1.Q6_K.gguf")
+
 usage() {
     echo "Usage: $0 [model]"
     echo "Available models:"
