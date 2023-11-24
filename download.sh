@@ -7,6 +7,7 @@ usage() {
     echo "  13b: Download llama2 13B model"
     echo "  zephyr7b: Download Zephyr 7B beta"
     echo "  bakllava: Download BakLLaVa-1 model"
+    echo "  neural7b: Download Intel Neural 7B v3 1 model"
 }
 
 # Check if no arguments were provided
@@ -31,6 +32,11 @@ case $1 in
         echo "Downloading Zephyr 7B Beta..."
         mkdir -p models/zephyr/
         curl -L -o models/zephyr/zephyr-7b-beta.Q4_K_M.gguf https://huggingface.co/TheBloke/zephyr-7B-beta-GGUF/resolve/main/zephyr-7b-beta.Q4_K_M.gguf?download=true
+        ;;
+    neural7b)
+        echo "Downloading Intel Neural 7B v3 1..."
+        mkdir -p models/neural/
+        curl -L -o models/neural/neural-chat-7b-v3-1.Q6_K.gguf https://huggingface.co/TheBloke/neural-chat-7B-v3-1-GGUF/resolve/main/neural-chat-7b-v3-1.Q6_K.gguf?download=true
         ;;
     bakllava)
         echo "Downloading BakLLaVa-1"

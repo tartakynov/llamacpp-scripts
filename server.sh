@@ -32,6 +32,10 @@ case $1 in
         echo "Running server with BakLLaVa-1..."
         MODEL_ARGS="-m models/bakllava/ggml-model-q4_k.gguf --mmproj models/bakllava/mmproj-model-f16.gguf"
         ;;
+    neural7b)
+        echo "Running server with Intel Neural 7B v3 1..."
+        MODEL_ARGS="-m models/neural/neural-chat-7b-v3-1.Q6_K.gguf"
+        ;;
     *)
         echo "Invalid argument: $1"
         usage
